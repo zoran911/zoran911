@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/jquery.min.js"></script>
+        <link rel="icon" href="./img/icon.png" />
+        <title>Surprise Box Store</title>
+    </head>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white"> <a class="navbar-brand" href="./index.html"><img src="./img/logo.png"></a>
+        <button
+        class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"> <a class="nav-link" href="./index.html">Welcome Page<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="./index.html#menu">Gifts Menu</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    
+    <body>
+        <div class="block hero1 my-auto" style="background-image:url('./img/screenshot.jpg');">
+            <div class="container-fluid text-center">
+                 <h1 class="display-2 text-white" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-offset="0">Suprise Box Store</h1>
+                <p class="lead text-white" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="600">Make yourself happy with the Surprise Box subscription</p>
+                <a
+                href="#menu" class="btn-text lead d-inline-block text-white border-top border-bottom mt-4 pt-1 pb-1"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">View available Gifts</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="maincontent">
+            <div class="container">
+                <section id="menu">
+                    <div class="block menu1">
+                        <div class="buttons-container"> <a href="#" class="button button--is-active" data-target="pizzaMenu">Gift Boxes</a>
+                            <a
+                            href="#" class="button" data-target="coffeeMenu">Gift Cards</a>
+                        </div>
+                        <!-- Start Pizza Menu -->
+                        <div class="menu menu--is-visible" id="pizzaMenu" data-aos="fade-up">
+                            <div class="item row align-items-center">
+                                <div class="col-sm-3 pr-5">
+                                    <img class="product-img" src="./img/succulent-box.jpg">
+                                </div>
+                                <div class="details col-sm-9">
+                                    <div class="item__header">
+                                         <h3 class="item__title">Succulent Box</h3>
+ <span class="item__dots"></span>
+ <span class="item__price">$25 per month</span>
+                                    </div>
+                                    <p class="item__description">Get a high-quality, curated collection of succulent plants, pots, media, and fun gardening goodies.</p>
+                                    <button class="btn btn-sm btn-outline-primary my-cart-btn"
+                                    data-id="1" data-name="Succulent Box" data-price="25" data-quantity="1"
+                                    data-image="./img/succulent-box.jpg">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="item row align-items-center">
+                                <div class="col-sm-3 pr-5">
+                                    <img class="product-img" src="./img/cozy-home.jpg">
+                                </div>
+                                <div class="details col-sm-9">
+                                    <div class="item__header">
+                                         <h3 class="item__title">Cozy Home Box</h3>
+ <span class="item__dots"></span>
+ <span class="item__price">$39 per month</span>
+                                    </div>
+                                    <p class="item__description">Premium home subscription box curated with quality artisan and vintage goods to make your home trendy & cozy throughout the seasons.</p>
+                                    <button class="btn btn-sm btn-outline-primary my-cart-btn"
+                                    data-id="2" data-name="Cozy Home" data-price="39" data-quantity="1"
+                                    data-image="./img/cozy-home.jpg">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="item row align-items-center">
+                                <div class="col-sm-3 pr-5">
+                                    <img class="product-img" src="./img/special-box.jpg">
+                                </div>
+                                <div class="details col-sm-9">
+                                    <div class="item__header">
+                                         <h3 class="item__title">Special Art Box</h3>
+ <span class="item__dots"></span>
+ <span class="item__price">$55</span>
+                                    </div>
+                                    <p class="item__description">Secret Art Box. Maybe next artist is Banksy? Who knows?</p>
+                                    <button class="btn btn-sm btn-outline-primary my-cart-btn"
+                                    data-id="3" data-name="Classic Pizza" data-price="55" data-quantity="1"
+                                    data-image="./img/special-box.jpg">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Coffee Menu -->
+                        <div class="menu" id="coffeeMenu">
+                            <div class="item">
+                                <div class="item__header">
+                                     <h3 class="item__title">Amazon Gift Card</h3>
+ <span class="item__dots"></span>
+ <span class="item__price">$10 service fee</span>
+                                </div>
+                                <p class="item__description">The recipient of the Amazon.com gift card can redeem the gift on Amazon.com. The balance of the card will automatically be applied to his account and will be used to pay for any future items purchased on Amazon.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item__header">
+                                     <h3 class="item__title">Netflix Gift Card</h3>
+ <span class="item__dots"></span>
+ <span class="item__price">$10 service fee</span>
+                                </div>
+                                <p class="item__description">You can use Netflix Gift Cards to pay for a Netflix subscription or to give as a gift to friends, family, teachers, and more. You can purchase a Netflix Gift Card at many retail locations, and apply the gift card to your new or existing Netflix account.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item__header">
+                                     <h3 class="item__title">Flexepin Gift Card</h3>
+ <span class="item__dots"></span>
+ <span class="item__price">$15 service fee</span>
+                                </div>
+                                <p class="item__description">Flexepin is a cash top-up voucher that allows users to top-up existing accounts to enable online shopping without the need for a credit or debit card, whilst protecting personal identity and financial information.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item__header">
+                                     <h3 class="item__title">PaySafeCard Gift Card</h3>
+ <span class="item__dots"></span>
+ <span class="item__price">$15 service fee</span>
+                                </div>
+                                <p class="item__description">Paysafecard is a payment method that enables the customer to stay anonymous not only to the merchants, but also with respect to the payment provider.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- End block -->
+                    <script src="./js/mycart.js"></script>
+                    <script src="./js/mycart-custom.js"></script>
+                </section>
+            </div>
+        </div>
+        <footer class="block footer1 footer text-center">
+            <p>&copy; Surprise Box Store, 2020</p>
+            55 King St W, Kitchener, ON, N2G 4W1
+            <br>800-369-8910
+        </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="js/custom-general.js"></script>
+    </body>
+
+</html>
